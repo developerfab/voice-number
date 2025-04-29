@@ -36,7 +36,12 @@ else:
 
 while(lives > 0):
 
-    number = str(random.randint(0,10000))
+    if level == '1':
+        number = str(random.randint(0, 100))
+    elif level == '2':
+        number = str(random.randint(0, 5000))
+    else:
+        number = str(random.randint(0, 100000))
 
     language = 'en'
 
